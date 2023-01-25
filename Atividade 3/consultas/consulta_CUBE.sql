@@ -1,4 +1,3 @@
-
 /*
 CONSULTA 3 utilizando CUBE
 Qual foi o total de vendas para cada categoria de produto, agrupado por mês e estado da loja?

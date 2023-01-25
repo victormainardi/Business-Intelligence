@@ -44,3 +44,8 @@ As entidades estão relacionadas entre si. Uma venda está relacionada a um prod
 * Qual foi o total de vendas de cada categoria de produto?
 * Qual foi o total de vendas de cada loja, agrupado por estado?
 * Qual foi o total de vendas para cada categoria de produto, agrupado por mês e estado da loja?
+
+
+
+### Referências
+iMasters - SQL Server (https://imasters.com.br/sql-server/agrupando-dados-com-grouping-sets)
