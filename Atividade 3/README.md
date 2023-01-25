@@ -11,6 +11,12 @@ Para resolver esse problema, foi criado um banco de dados com tabelas para armaz
 
 Foram criadas três perguntas para serem respondidas pelas consultas no banco de dados, relacionadas ao total de vendas para categorias, loja e cidade/estado. As consultas foram criadas usando GROUPING SETS, ROLLUP e CUBE para responder cada uma das perguntas.
 
+### Implementação
+* Criar as tabelas: Produtos, Lojas, Vendas, Clientes e Vendas_Clientes utilizando PostgreSQL.
+* Popular as tabelas com dados.
+* Realizar consultas utilizando GROUPING SETS, ROLLUP e CUBE
+
+
 ### Projeto Conceitual:
 
 Para este problema, foram criadas quatro entidades pricipais: Produtos, Vendas, Clientes e Lojas.
