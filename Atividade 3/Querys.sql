@@ -1,10 +1,17 @@
-/*PERGUNTA 1 utilizando GROUPING SET*/
+/*
+CONSULTA 1 utilizando GROUPING SET
+Qual foi o total de vendas de cada categoria de produto?
+*/
 SELECT categoria, SUM(quantidade) as total_vendas, SUM(valor) as total_valor
 FROM vendas
 JOIN produtos ON vendas.id_produto = produtos.id
 GROUP BY GROUPING SETS ((categoria), ());
 
-/*PERGUNTA 2 utilizando ROLLUP*/
+
+/*
+CONSULTA 2 utilizando ROLLUP
+Qual foi o total de vendas de cada loja, agrupado por estado?
+*/
 SELECT COALESCE(lojas.nome,'Total') as nome_loja, 
        COALESCE(lojas.estado,'Total') as estado, 
        SUM(vendas.quantidade) as total_vendas, 
@@ -14,7 +21,10 @@ JOIN lojas ON vendas.id_loja = lojas.id
 GROUP BY ROLLUP (lojas.nome,lojas.estado);
 
 
-/*PERGUNTA 3 utilizando CUBE */
+/*
+CONSULTA 3 utilizando CUBE
+Qual foi o total de vendas para cada categoria de produto, agrupado por mês e estado da loja?
+*/
 WITH vendas_lojas AS (
     SELECT v.id_produto, p.categoria, l.estado, to_char(v.data, 'Mon-YY') as mes, SUM(v.quantidade) as total_vendas, SUM(v.valor) as total_valor
     FROM vendas v
@@ -28,6 +38,3 @@ SELECT COALESCE(categoria,'Total') as categoria,
        SUM(total_valor) as total_valor
 FROM vendas_lojas
 GROUP BY CUBE (categoria,estado,mes);
-
-
-
