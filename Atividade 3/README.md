@@ -13,6 +13,9 @@ Foram criadas três perguntas para serem respondidas pelas consultas no banco de
 
 ### Projeto Conceitual:
 
+Para este problema, foram criadas quatro entidades pricipais: Produtos, Vendas, Clientes e Lojas.
+As entidades estão relacionadas entre si. Uma venda está relacionada a um produto, um cliente e uma loja.
+
 #### Projeto Lógico
 
 * Tabela "produtos": armazena informações sobre os produtos vendidos, como nome, categoria e preço.
