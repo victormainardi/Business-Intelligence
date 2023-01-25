@@ -1,4 +1,4 @@
-/* Tabela 5 Vendas_Clientes */
+/* Fix Tabela 5 Vendas_Clientes */
 CREATE TABLE Vendas_Clientes (
     id_venda INTEGER NOT NULL,
     id_cliente INTEGER NOT NULL,
