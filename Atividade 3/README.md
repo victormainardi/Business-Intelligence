@@ -9,6 +9,8 @@ Uma empresa de varejo deseja registrar e analisar suas vendas para tomar decisõ
 ### Solução
 Para resolver esse problema, foi criado um banco de dados com tabelas para armazenar informações dos produtos, vendas, clientes e lojas. Essas tabelas foram relacionadas entre si, permitindo junções. Foi desenvolvido um projeto conceitual, lógico e físico para representar o banco de dados.
 
+Foram criadas três perguntas para serem respondidas pelas consultas no banco de dados, relacionadas ao total de vendas para categorias, loja e cidade/estado. As consultas foram criadas usando GROUPING SETS, ROLLUP e CUBE para responder cada uma das perguntas.
+
 ### Projeto Conceitual:
 
 #### Projeto Lógico
