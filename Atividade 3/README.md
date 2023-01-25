@@ -13,7 +13,7 @@ Foram criadas três perguntas para serem respondidas pelas consultas no banco de
 
 ### Implementação
 * Criar as tabelas: Produtos, Lojas, Vendas, Clientes e Vendas_Clientes utilizando PostgreSQL.
-* Popular as tabelas com dados.
+* Popular as tabelas com dados, utilizando algum csv disponível no Kaggle e adaptando ao problema.
 * Realizar consultas utilizando GROUPING SETS, ROLLUP e CUBE
 
 
@@ -28,7 +28,7 @@ As entidades estão relacionadas entre si. Uma venda está relacionada a um prod
 * Tabela "lojas": armazena informações sobre nome, cidade e estado.
 * Tabela "vendas": armazena informações sobre as vendas, como o ID do produto, o ID da loja, a quantidade vendida e o preço total.
 * Tabela "clientes": armazena informações básicas dos clientes, como nome, cidade e estado.
-* Tabela "vendas_clientes": armazena informações sobre ID da venda e preço total.
+* Tabela "vendas_clientes": relaciona informações de vendas com clientes, armazenando também o ID da venda e o ID do cliente.
 
 
 #### Projeto Físico

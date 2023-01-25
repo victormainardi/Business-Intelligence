@@ -19,4 +19,4 @@ VALUES
 		(17, 2, '2022-01-17', 8, (SELECT preco*8 FROM Produtos WHERE id=17)),
 		(18, 3, '2022-01-18', 12, (SELECT preco*12 FROM Produtos WHERE id=18)),
 		(19, 4, '2022-01-19', 15, (SELECT preco*15 FROM Produtos WHERE id=19)),
-		(20, 5, '2022-01-20', 20, (SELECT preco*20 FROM Produtos WHERE id=20)),
+		(20, 5, '2022-01-20', 20, (SELECT preco*20 FROM Produtos WHERE id=20));
