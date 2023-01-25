@@ -1,4 +1,4 @@
-/* Criar Tabela 4 Produtos */
+/* Criar Tabela 4 Clientes */
 CREATE TABLE Clientes (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
