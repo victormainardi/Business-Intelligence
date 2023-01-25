@@ -1,4 +1,4 @@
-/* Tabela 3 Vendas */
+/* Criar Tabela 3 Vendas */
 CREATE TABLE Vendas (
     id SERIAL PRIMARY KEY,
     id_produto INTEGER NOT NULL,
