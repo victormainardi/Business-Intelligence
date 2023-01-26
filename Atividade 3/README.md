@@ -73,5 +73,6 @@ id_cliente (INT, chave estrangeira da tabela Clientes).*
 
 ### Referências
 iMasters - SQL Server (https://imasters.com.br/sql-server/agrupando-dados-com-grouping-sets)
+
 DEVMEDIA- MER (https://www.devmedia.com.br/mer-e-der-modelagem-de-bancos-de-dados/14332)
 
