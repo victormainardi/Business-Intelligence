@@ -22,7 +22,7 @@ Foram criadas três perguntas para serem respondidas pelas consultas no banco de
 Para este problema, foram criadas quatro entidades pricipais: Produtos, Vendas, Clientes e Lojas.
 As entididades relacionadas entre si podem ser vista como:
 * Produtos e Vendas - 1:n
-* Lokas e Vendas - 1:n
+* Lojas e Vendas - 1:n
 * Clientes e Vendas - n:n
 
 #### Projeto Lógico
