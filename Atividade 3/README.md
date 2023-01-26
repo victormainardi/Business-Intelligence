@@ -66,7 +66,7 @@ id_cliente (INT, chave estrangeira da tabela Clientes).*
 
 ### Perguntas a serem resolvidas:
 * Qual foi o total de vendas de cada categoria de produto?
-* Qual foi o total de vendas de cada loja, agrupado por estado?
+* Qual foi o total de vendas de cada estado?
 * Qual foi o total de vendas para cada categoria de produto, agrupado por mês e estado da loja?
 
 
