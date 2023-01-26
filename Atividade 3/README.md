@@ -21,9 +21,9 @@ Foram criadas três perguntas para serem respondidas pelas consultas no banco de
 
 Para este problema, foram criadas quatro entidades pricipais: Produtos, Vendas, Clientes e Lojas.
 As entididades relacionadas entre si podem ser vista como:
-* Produtos e Vendas - 1:n
-* Lojas e Vendas - 1:n
-* Clientes e Vendas - n:n
+* Produtos e Vendas é de cardinalidade 1:n
+* Lojas e Vendas é de cardinalidade 1:n
+* Clientes e Vendas é de cardinalidade n:n
 
 #### Projeto Lógico
 
@@ -35,12 +35,39 @@ As entididades relacionadas entre si podem ser vista como:
 
 
 #### Projeto Físico
-* Tabela Produtos: contém campos como id (INT, chave primária), nome (VARCHA ),categoria (VARCHAR), preco (DECIMAL) tipo (VARCHAR).
+* Tabela Produtos: contém campos como
+*id (INT, chave primária),
+*nome (VARCHA ),
+*categoria (VARCHAR),
+*preco (DECIMAL)
 
-* Tabela Lojas: contém campos como id (INT, chave primária), nome (VARCHAR), cidade (VARCHAR) e estado (VARCHAR).
-* Tabela Venda: contém campos como id (INT, chave primária), id_produto (INT, chave estrangeira da tabela Produtos), id_loja (INT, chave estrangeira da tabela Lojas), data (DATE), quantidade (INT) e valor (DECIMAL).
-* Tabela Clientes: contém campos como id (INT, chave primária), nome (VARCHAR), cidade (VARCHAR) e estado (VARCHAR).
-* Tabela Vendas_Clientes: contém campos como id_venda (INT, chave estrangeira da tabela Vendas) e id_cliente (INT, chave estrangeira da tabela Clientes).
+
+* Tabela Lojas: contém campos como
+*id (INT, chave primária),
+*nome (VARCHAR),
+*cidade (VARCHAR)
+*estado (VARCHAR).
+
+
+* Tabela Venda: contém campos como
+*id (INT, chave primária),
+*id_produto (INT, chave estrangeira da tabela Produtos),
+*id_loja (INT, chave estrangeira da tabela Lojas),
+*data (DATE),
+*quantidade (INT)
+*valor (DECIMAL).
+
+
+* Tabela Clientes: contém campos como 
+*id (INT, chave primária),
+*nome (VARCHAR),
+*cidade (VARCHAR)
+*estado (VARCHAR).
+
+
+* Tabela Vendas_Clientes: contém campos como
+*id_venda (INT, chave estrangeira da tabela Vendas)
+*id_cliente (INT, chave estrangeira da tabela Clientes).
 
 
 ### Perguntas a serem resolvidas:
